@@ -2,8 +2,11 @@ import multer from 'multer'
 import path from 'path';
 import crypto from 'crypto'
 import AppError from '../utils/AppError.js';
-const UPLOAD_DIR = path.join(__dirname, '..', '..', 'uploads', 'tmp');
-const MAX_FILE_SIZE_BYTES = 10 * 1024 * 1024; // 10MB
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const MAX_FILE_SIZE_BYTES = 10 * 1024 * 1024;
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
