@@ -3,6 +3,7 @@ import path from 'path';
 import crypto from 'crypto'
 import AppError from '../utils/AppError.js';
 import { fileURLToPath } from "url";
+import { UPLOAD_DIR } from '../utils/paths.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -38,5 +39,5 @@ const upload = multer({
   fileFilter,
   limits: { fileSize: MAX_FILE_SIZE_BYTES },
 });
-
+console.log("from te upload middlewareeeeeeeee")
 export default upload
