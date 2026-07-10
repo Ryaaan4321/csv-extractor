@@ -1,6 +1,6 @@
 export const EXTRACTION_CONFIG = {
-  MODEL: 'gemini-3.5-flash',
+  MODEL: 'gemini-flash-latest',
   BATCH_SIZE: 25,
-  MAX_RETRIES: 3,
-  RETRY_BASE_DELAY_MS: 1000,
+  MAX_RETRIES: 5,
+  RETRY_BASE_DELAY_MS: 3000,
 };
