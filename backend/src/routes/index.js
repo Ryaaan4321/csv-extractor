@@ -1,8 +1,8 @@
 import express from 'express'
 import uploadRouter from './upload.routes.js';
+import extractionRouter from './extraction.route.js';
 const routes = express.Router();
-
-console.log("routes from the index")
 routes.use('/upload', uploadRouter);
+routes.use('/extraction',extractionRouter)
 
 export default routes;

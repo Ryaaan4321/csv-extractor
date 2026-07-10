@@ -39,5 +39,4 @@ const upload = multer({
   fileFilter,
   limits: { fileSize: MAX_FILE_SIZE_BYTES },
 });
-console.log("from te upload middlewareeeeeeeee")
 export default upload
