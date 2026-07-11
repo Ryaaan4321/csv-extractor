@@ -27,9 +27,8 @@ export function ProgressSchematic({ step }) {
                   <Check size={14} color="#FFFFFF" strokeWidth={3} />
                 ) : (
                   <span
-                    className="text-[11px] font-medium"
+                    className="text-[11px] font-medium font-mono"
                     style={{
-                      fontFamily: "'JetBrains Mono', monospace",
                       color: state === "active" ? TOKENS.accent : TOKENS.muted,
                     }}
                   >
